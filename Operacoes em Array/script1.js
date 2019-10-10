@@ -1,7 +1,8 @@
 const lista = [1,2,3,4,5,6];
 
-const novaLista = lista.map(function(item) {
+const novaLista = lista.map(function(item) { //function(item,index)
     return item * 5;
+    //return item + index
 });
 
 console.log(novaLista);
@@ -11,3 +12,8 @@ const soma = lista.reduce(function(total, proximo){
 });
 
 console.log(soma);
+
+const find = lista.find(function(item) {
+    return item === 6;
+});
+console.log(find);

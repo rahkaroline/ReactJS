@@ -16,6 +16,7 @@ class App extends Component{
     aumentar(){
         let state = this.state;
         state.contador +=1;
+        state.nome = 'José';
         this.setState(state)
     }
 
@@ -29,7 +30,7 @@ class App extends Component{
         return(
             <div>
                 <h1>Contador</h1>
-
+                {this.state.nome}
                 <h3>
                 <button onClick={this.diminuir}>-</button>
                 {this.state.contador}

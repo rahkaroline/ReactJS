@@ -22,7 +22,7 @@ class Membro extends Component{
                <button onClick={this.entrar}>
                    Entrar como Matheus
                 </button>
-               <button onClick={() => this.setState({nome: ''})}>
+               <button onClick={() => this.setState({nome: 'Matheus'})}>
                    Sair
                 </button>
             </div>
